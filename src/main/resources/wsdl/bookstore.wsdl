@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<wsdl:definitions name="Hello"
+  targetNamespace="http://bookstore/services/hello"
+  xmlns:tns="http://bookstore/services/hello" xmlns:types="http://bookstore/types/hello"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://codenotfound.com/types/helloworld"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+      attributeFormDefault="unqualified" version="1.0">
+
+    <xsd:element name="book">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="bookId" type="xsd:string" />
+            <xsd:element name="title" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      </xsd:schema>
+</wsdl:types>
+      
+  </wsdl:definitions>
